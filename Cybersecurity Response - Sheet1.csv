@@ -1,0 +1,41 @@
+Text,Intent
+I got a spam message,report_spam
+Someone is asking for my password,report_phishing
+I clicked on a weird link,report_phishing
+How do I avoid getting hacked?,ask_advice
+What is phishing?,learn_about_security
+My account got hacked,report_data_leak
+Is this a scam email?,report_spam
+How do I stay safe online?,ask_advice
+I received a suspicious file attachment,report_phishing
+A friend sent me a strange message,report_phishing
+I saw a fake login page,report_phishing
+My credentials might be stolen,report_data_leak
+What's the best way to protect my data?,ask_advice
+An unknown sender emailed me a link,report_spam
+I'm worried my data was leaked,report_data_leak
+Got a call asking for my OTP code,report_phishing
+The email looks legit but something feels off,report_phishing
+Someone impersonated my colleague,report_phishing
+Is it safe to share my ID online?,ask_advice
+Tips to identify phishing emails?,learn_about_security
+My Instagram account was compromised,report_data_leak
+How can I avoid social engineering?,learn_about_security
+Can I trust this website?,ask_advice
+Is this WhatsApp message a scam?,report_spam
+My password was leaked in a breach,report_data_leak
+I think I downloaded malware,report_phishing
+The link redirected me to a shady site,report_phishing
+Someone asked for payment via gift card,report_phishing
+Is this a safe app to install?,ask_advice
+This email claims to be from my bank,report_phishing
+Why do hackers want my email?,learn_about_security
+Do I need antivirus software?,learn_about_security
+My device is acting weird after clicking a link,report_data_leak
+How can I report online scams?,report_spam
+Can you help me understand ransomware?,learn_about_security
+I think this message is trying to trick me,report_phishing
+Where can I learn about cyber threats?,learn_about_security
+Is it okay to use the same password everywhere?,ask_advice
+Someone asked me to verify my account urgently,report_phishing
+I'm seeing too many pop-ups on my browser,report_spam

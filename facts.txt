@@ -1,0 +1,84 @@
+# PHISHING
+Phishing is a fraudulent attempt to steal sensitive information by pretending to be a trustworthy entity in electronic communications.
+- Never click on suspicious links or download attachments from unknown sources.
+- Emails asking for urgent action, like "your account will be locked," are common phishing tactics.
+- Learn more about phishing and prevention at: https://www.phishing.org/what-is-phishing
+
+# SPAM
+Spam consists of unsolicited and often irrelevant messages sent to many users, typically for advertising or scams.
+- Mark spam emails instead of replying, as replying confirms your email is active.
+- Use spam filters and avoid clicking on suspicious ads.
+- For more info, visit: https://www.consumer.ftc.gov/articles/how-recognize-and-avoid-phishing-scams
+
+# MALWARE
+Malware is malicious software designed to damage or gain unauthorized access to computers.
+- If you suspect malware infection:
+  - Disconnect from the internet immediately.
+  - Avoid clicking pop-ups or unknown alerts.
+  - Use antivirus tools like Malwarebytes or Windows Defender to scan and remove threats.
+  - For serious cases, back up files and reinstall your OS.
+- Learn about malware types and protection: https://us.norton.com/internetsecurity-malware.html
+
+# RANSOMWARE
+Ransomware encrypts your files and demands payment for decryption.
+- Never pay the ransom; it doesn't guarantee file recovery.
+- Instead, restore files from backups or consult cybersecurity experts.
+- Keep your backups offline and updated regularly.
+- Learn more at: https://www.cisa.gov/ransomware
+
+# PASSWORD SECURITY
+Strong passwords are key to protecting accounts.
+- Use a mix of letters, numbers, and symbols.
+- Avoid reusing passwords across multiple sites.
+- Enable two-factor authentication (2FA) wherever possible.
+- Use password managers like LastPass or Bitwarden.
+- See tips here: https://www.cyber.gov.au/acsc/view-all-content/passwords
+
+# DATA LEAKS
+Data leaks expose sensitive information accidentally or maliciously.
+- If notified of a data breach:
+  - Change your passwords immediately.
+  - Monitor bank and online accounts for unusual activity.
+  - Consider identity theft protection services.
+- Learn how to respond here: https://www.identitytheft.gov/
+
+# SAFE BROWSING
+- Always check website URLs carefully; phishing sites often mimic real ones with slight misspellings.
+- Use HTTPS websites for secure connections.
+- Avoid logging into sensitive accounts over public Wi-Fi.
+- Learn more about safe browsing: https://staysafeonline.org/stay-safe-online/
+
+# SOCIAL ENGINEERING
+Attackers may impersonate trusted figures via calls, texts, or messages to extract information.
+- Never share personal info such as passwords, OTPs, or PINs with anyone.
+- Be skeptical of unexpected communications asking for sensitive info.
+- Learn social engineering tactics here: https://www.social-engineer.com/
+
+# SOFTWARE UPDATES
+Regularly update your OS, browsers, antivirus, and apps.
+- Updates patch security vulnerabilities.
+- Enable automatic updates when possible.
+
+# USB SAFETY
+Avoid plugging unknown USB drives — they can carry malware.
+- Use data-only charging cables in public places like airports.
+- Learn more about USB security: https://us-cert.cisa.gov/ncas/tips/ST04-015
+
+# CYBERBULLYING & SCAMS
+- Report abusive or scam messages to platform moderators immediately.
+- If threatened or blackmailed online, save all evidence and contact law enforcement or cybersecurity hotlines.
+- Resources: https://www.stopbullying.gov/cyberbullying/what-is-it
+
+# GOOD DIGITAL HABITS
+- Log out of shared or public computers.
+- Avoid saving passwords on browsers on public devices.
+- Back up data regularly to offline or trusted cloud storage.
+- Learn digital hygiene tips: https://www.consumer.ftc.gov/articles/digital-security
+
+# WHERE TO LEARN MORE ABOUT CYBERSECURITY
+- Cybrary: https://www.cybrary.it/ — Free and paid courses on cybersecurity basics to advanced topics.
+- Coursera: https://www.coursera.org/browse/information-technology/cybersecurity
+- Open Security Training: https://opensecuritytraining.info/
+- StaySafeOnline: https://staysafeonline.org/
+- US-CERT Cybersecurity Resources: https://us-cert.cisa.gov/ncas/tips
+
