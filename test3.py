@@ -10,7 +10,7 @@ from langchain.chains import RetrievalQA
 # Set page config FIRST
 st.set_page_config(page_title="Cybersecurity Chatbot", layout="wide")
 
-GEMINI_KEY = "AIzaSyCARantSHqTfDQZSlXJ7BMxGu8b8BOy0_U"
+GEMINI_KEY = "Your API Key"
 genai.configure(api_key=GEMINI_KEY)
 
 @st.cache_resource
