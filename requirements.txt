@@ -1,8 +1,9 @@
 streamlit
 google-generativeai
 langchain
+langchain-community
 langchain-google-genai
 faiss-cpu
 tiktoken
-unstructured
 sentence-transformers
+unstructured
