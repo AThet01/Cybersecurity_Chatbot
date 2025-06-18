@@ -4,3 +4,5 @@ langchain
 langchain-google-genai
 faiss-cpu
 tiktoken
+unstructured
+sentence-transformers
