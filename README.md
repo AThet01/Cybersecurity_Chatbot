@@ -1,9 +1,6 @@
-# Cybersecurity_Chatbot
-A Cybersecurity Chatbot is a chatbot made up with LLM+RAG that can be asked anything about phishing, spam, or data leaks – using real facts.It also shows chat history.
-
 # 🔐 Cybersecurity Chatbot
 
-An interactive AI-powered chatbot built with **Streamlit** and **Google Gemini** (Generative AI), designed to answer questions about cybersecurity topics such as phishing, spam, and data leaks using a custom knowledge base.
+An interactive AI-powered chatbot built with **Streamlit** and **Google Gemini** (Generative AI), designed to answer questions about cybersecurity topics such as phishing, spam, and data leaks using a custom knowledge base including chat history.
 
 # Link => https://cybersecuritychatbot-m6shw32ccxqpbs9vkfvywj.streamlit.app/
 
