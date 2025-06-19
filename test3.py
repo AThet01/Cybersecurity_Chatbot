@@ -48,48 +48,51 @@ qa_chain = RetrievalQA.from_chain_type(
 # Store conversation history in session state
 if "messages" not in st.session_state:
     st.session_state.messages = []  # list of dicts {"role": "user"|"bot", "content": text}
-
 def display_message(message, is_user):
-    # Use columns: user message aligned right, bot message aligned left
     if is_user:
+        # User message (light grey, right-aligned)
         left_col, right_col = st.columns([1, 4])
         with left_col:
-            st.write("")  # Empty to push right
+            st.write("")
         with right_col:
             st.markdown(
                 f"""
                 <div style='
-                    background-color:#DCF8C6; 
-                    padding:10px; 
-                    border-radius:10px; 
-                    text-align:right; 
-                    max-width:70%; 
-                    margin-left:auto; 
-                    font-size:16px;'>
+                    background-color:#E9E9E9;
+                    padding:10px 15px;
+                    border-radius:10px;
+                    text-align:right;
+                    max-width:70%;
+                    margin-left:auto;
+                    font-size:16px;
+                    color:#000000;'>
                     {message}
                 </div>
                 """,
                 unsafe_allow_html=True
             )
     else:
+        # Bot message (purple, left-aligned)
         left_col, right_col = st.columns([4, 1])
         with left_col:
             st.markdown(
                 f"""
                 <div style='
-                    background-color:#E6E6E6; 
-                    padding:10px; 
-                    border-radius:10px; 
-                    text-align:left; 
-                    max-width:70%; 
-                    font-size:16px;'>
+                    background-color:#C153A3;
+                    padding:10px 15px;
+                    border-radius:10px;
+                    text-align:left;
+                    max-width:70%;
+                    font-size:16px;
+                    color:#FFFFFF;'>
                     {message}
                 </div>
                 """,
                 unsafe_allow_html=True
             )
         with right_col:
-            st.write("")  # empty to keep left alignment
+            st.write("")
+
 
 def main():
     st.title("🔐 Cybersecurity Chatbot")
