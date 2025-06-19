@@ -2,8 +2,6 @@
 
 An interactive AI-powered chatbot built with **Streamlit** and **Google Gemini** (Generative AI), designed to answer questions about cybersecurity topics such as phishing, spam, and data leaks using a custom knowledge base including chat history.
 
-# Link => https://cybersecuritychatbot-m6shw32ccxqpbs9vkfvywj.streamlit.app/
-
 ---
 
 ## ✨ Features
