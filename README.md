@@ -40,7 +40,7 @@ An interactive AI-powered chatbot built with **Streamlit** and **Google Gemini**
 
 ## ▶️ Getting Started
 
-### 1. Clone the Repo
+### Clone the Repo
 
 ```bash
 git clone https://github.com/yourusername/cybersecurity-chatbot.git
@@ -53,7 +53,7 @@ cd cybersecurity-chatbot
 pip install -r requirements.txt
 ```
 
-### GEMINI_KEY = "your-api-key-here"
+
 
 
 
