@@ -38,7 +38,7 @@ An interactive AI-powered chatbot built with **Streamlit** and **Google Gemini**
 ### Clone the Repo
 
 ```bash
-git clone https://github.com/yourusername/cybersecurity-chatbot.git
+git clone https://github.com/AThet01/Cybersecurity_Chatbot
 cd cybersecurity-chatbot
 ```
 
