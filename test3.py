@@ -1,7 +1,6 @@
-import os
 import streamlit as st
 import google.generativeai as genai
-from langchain.vectorstores import FAISS
+from langchain_community.vectorstores import FAISS   # ✅ updated import
 from langchain_google_genai import GoogleGenerativeAIEmbeddings, ChatGoogleGenerativeAI
 from langchain.document_loaders import TextLoader
 from langchain.text_splitter import CharacterTextSplitter
@@ -10,7 +9,8 @@ from langchain.chains import RetrievalQA
 # Set page config FIRST
 st.set_page_config(page_title="Cybersecurity Chatbot", layout="wide")
 
-GEMINI_KEY = "Your Gemini API keys "
+# Configure API key
+GEMINI_KEY = "YOUR_GEMINI_APIKEYS"
 genai.configure(api_key=GEMINI_KEY)
 
 @st.cache_resource
@@ -33,13 +33,12 @@ qa_chain = RetrievalQA.from_chain_type(
         model="gemini-1.5-flash",
         google_api_key=GEMINI_KEY,
         system_instruction=(
-    "You are a helpful cybersecurity assistant. "
-    "Answer questions using the provided knowledge base. "
-    "If the question is about where to learn cybersecurity, "
-    "recommend learning resources listed in the knowledge base. "
-    "If you don't find info in the knowledge base, still provide a general helpful answer."
-)
-
+            "You are a helpful cybersecurity assistant. "
+            "Answer questions using the provided knowledge base. "
+            "If the question is about where to learn cybersecurity, "
+            "recommend learning resources listed in the knowledge base. "
+            "If you don't find info in the knowledge base, still provide a general helpful answer."
+        )
     ),
     retriever=retriever,
     return_source_documents=False
@@ -47,51 +46,45 @@ qa_chain = RetrievalQA.from_chain_type(
 
 # Store conversation history in session state
 if "messages" not in st.session_state:
-    st.session_state.messages = []  # list of dicts {"role": "user"|"bot", "content": text}
+    st.session_state.messages = []
+
+
 def display_message(message, is_user):
     if is_user:
         # User message (light grey, right-aligned)
-        left_col, right_col = st.columns([1, 4])
-        with left_col:
-            st.write("")
-        with right_col:
-            st.markdown(
-                f"""
-                <div style='
-                    background-color:#E9E9E9;
-                    padding:10px 15px;
-                    border-radius:10px;
-                    text-align:right;
-                    max-width:70%;
-                    margin-left:auto;
-                    font-size:16px;
-                    color:#000000;'>
-                    {message}
-                </div>
-                """,
-                unsafe_allow_html=True
-            )
+        st.markdown(
+            f"""
+            <div style='
+                background-color:#E9E9E9;
+                padding:10px 15px;
+                border-radius:10px;
+                text-align:right;
+                max-width:70%;
+                margin-left:auto;
+                font-size:16px;
+                color:#000000;'>
+                {message}
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
     else:
         # Bot message (purple, left-aligned)
-        left_col, right_col = st.columns([4, 1])
-        with left_col:
-            st.markdown(
-                f"""
-                <div style='
-                    background-color:#C153A3;
-                    padding:10px 15px;
-                    border-radius:10px;
-                    text-align:left;
-                    max-width:70%;
-                    font-size:16px;
-                    color:#FFFFFF;'>
-                    {message}
-                </div>
-                """,
-                unsafe_allow_html=True
-            )
-        with right_col:
-            st.write("")
+        st.markdown(
+            f"""
+            <div style='
+                background-color:#C153A3;
+                padding:10px 15px;
+                border-radius:10px;
+                text-align:left;
+                max-width:70%;
+                font-size:16px;
+                color:#FFFFFF;'>
+                {message}
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
 
 
 def main():
@@ -102,21 +95,22 @@ def main():
     for msg in st.session_state.messages:
         display_message(msg["content"], is_user=(msg["role"] == "user"))
 
-    # Use a form so you can clear input after submit
-    with st.form(key="input_form", clear_on_submit=True):
-        user_input = st.text_input("You:", key="input")
-        submitted = st.form_submit_button("Send")
+    # Use chat_input (like Telegram enter-to-send)
+    user_input = st.chat_input("Type your message here...")
 
-        if submitted and user_input:
-            st.session_state.messages.append({"role": "user", "content": user_input})
-            display_message(user_input, is_user=True)
+    if user_input:
+        # Add user message
+        st.session_state.messages.append({"role": "user", "content": user_input})
+        display_message(user_input, is_user=True)
 
-            with st.spinner("🔎 Searching knowledge base and answering..."):
-                result = qa_chain({"query": user_input})
-                bot_response = result['result']
-                st.session_state.messages.append({"role": "bot", "content": bot_response})
-                display_message(bot_response, is_user=False)
+        # Generate bot response
+        with st.spinner("🔎 Searching knowledge base and answering..."):
+            result = qa_chain({"query": user_input})
+            bot_response = result['result']
 
+        # Add bot message
+        st.session_state.messages.append({"role": "bot", "content": bot_response})
+        display_message(bot_response, is_user=False)
 
 
 if __name__ == "__main__":
