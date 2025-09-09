@@ -3,29 +3,37 @@
 An interactive AI-powered chatbot built with **Streamlit** and **Google Gemini** (Generative AI), designed to answer questions about cybersecurity topics such as phishing, spam, and data leaks using a custom knowledge base including chat history.Updated Code is "mainCsecChatbot.py".
 
 ---
-
 # ✨ Features
 
-Cybersecurity Q&A: Ask any cybersecurity-related question and get a grounded answer using your knowledge base (facts.txt) + Gemini LLM.
+- **Cybersecurity Q&A**
+  - Ask any cybersecurity-related question.
+  - Get grounded answers using your knowledge base (`facts.txt`) + Gemini LLM.
 
-Knowledge Base Retrieval: Uses FAISS vector search + Gemini embeddings to fetch the most relevant chunks from facts.txt.
+- **Knowledge Base Retrieval**
+  - Uses **FAISS vector search** with Gemini embeddings.
+  - Fetches the most relevant chunks from `facts.txt`.
 
-Conversational Memory: Remembers previous questions and answers for contextual follow-ups.
+- **Conversational Memory**
+  - Remembers previous questions and answers.
+  - Supports contextual follow-up queries.
 
-Conversation Manager (in the sidebar):
-➕ New Chat: Start a fresh conversation anytime.
-✏️ Rename Chat: Update the title of a chat for easier organization.
-🗑️ Delete Chat: Permanently remove unwanted conversations.
-🧹 Clear Chat: Reset the current chat history while keeping the conversation entry.
-⬇️ Export Chat: Download the full conversation (messages + history) as a JSON file.
+- **Conversation Manager (Sidebar Menu)**
+  - ➕ **New Chat**: Start a fresh conversation anytime.
+  - ✏️ **Rename Chat**: Update the title of a chat for easier organization.
+  - 🗑️ **Delete Chat**: Permanently remove unwanted conversations.
+  - 🧹 **Clear Chat**: Reset the current chat history while keeping the conversation entry.
+  - ⬇️ **Export Chat**: Download the full conversation (messages + history) as a JSON file.
 
-Persistent Storage: Conversations are saved locally under conversations/, with timestamps and an index for quick access.
+- **Persistent Storage**
+  - Conversations are saved locally under `conversations/`.
+  - Each chat includes timestamps and an index for quick access.
 
-Session Restore: The app automatically reloads your last active conversation when reopened.
+- **Session Restore**
+  - The app automatically reloads your last active conversation when reopened.
 
-UI Enhancements:
--Custom styled chat bubbles for user vs. bot.
--Sidebar selector to switch between multiple saved chats.
+- **UI Enhancements**
+  - Custom styled chat bubbles (different for user vs. bot).
+  - Sidebar selector to switch between multiple saved chats.
 
 ---
 
