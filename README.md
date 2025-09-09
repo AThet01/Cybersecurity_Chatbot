@@ -13,15 +13,10 @@ Knowledge Base Retrieval: Uses FAISS vector search + Gemini embeddings to fetch 
 Conversational Memory: Remembers previous questions and answers for contextual follow-ups.
 
 Conversation Manager (in the sidebar):
-
 ➕ New Chat: Start a fresh conversation anytime.
-
 ✏️ Rename Chat: Update the title of a chat for easier organization.
-
 🗑️ Delete Chat: Permanently remove unwanted conversations.
-
 🧹 Clear Chat: Reset the current chat history while keeping the conversation entry.
-
 ⬇️ Export Chat: Download the full conversation (messages + history) as a JSON file.
 
 Persistent Storage: Conversations are saved locally under conversations/, with timestamps and an index for quick access.
@@ -29,10 +24,8 @@ Persistent Storage: Conversations are saved locally under conversations/, with t
 Session Restore: The app automatically reloads your last active conversation when reopened.
 
 UI Enhancements:
-
-Custom styled chat bubbles for user vs. bot.
-
-Sidebar selector to switch between multiple saved chats.
+-Custom styled chat bubbles for user vs. bot.
+-Sidebar selector to switch between multiple saved chats.
 
 ---
 
