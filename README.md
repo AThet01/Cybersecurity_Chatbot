@@ -1,16 +1,38 @@
 # 🔐 Cybersecurity Chatbot
 
-An interactive AI-powered chatbot built with **Streamlit** and **Google Gemini** (Generative AI), designed to answer questions about cybersecurity topics such as phishing, spam, and data leaks using a custom knowledge base including chat history.
+An interactive AI-powered chatbot built with **Streamlit** and **Google Gemini** (Generative AI), designed to answer questions about cybersecurity topics such as phishing, spam, and data leaks using a custom knowledge base including chat history.Updated Code is "mainCsecChatbot.py".
 
 ---
 
-## ✨ Features
+# ✨ Features
 
-- 💬 Conversational UI with styled chat bubbles (user + bot)
-- ⚡ Powered by Google Gemini (`gemini-1.5-flash`) via `langchain`
-- 📚 Searches a knowledge base (`facts.txt`) using vector embeddings
-- 🔎 Retrieval-based QA (RAG) using `FAISS` for document search
-- 🚀 Easy to run locally using Streamlit
+Cybersecurity Q&A: Ask any cybersecurity-related question and get a grounded answer using your knowledge base (facts.txt) + Gemini LLM.
+
+Knowledge Base Retrieval: Uses FAISS vector search + Gemini embeddings to fetch the most relevant chunks from facts.txt.
+
+Conversational Memory: Remembers previous questions and answers for contextual follow-ups.
+
+Conversation Manager (in the sidebar):
+
+➕ New Chat: Start a fresh conversation anytime.
+
+✏️ Rename Chat: Update the title of a chat for easier organization.
+
+🗑️ Delete Chat: Permanently remove unwanted conversations.
+
+🧹 Clear Chat: Reset the current chat history while keeping the conversation entry.
+
+⬇️ Export Chat: Download the full conversation (messages + history) as a JSON file.
+
+Persistent Storage: Conversations are saved locally under conversations/, with timestamps and an index for quick access.
+
+Session Restore: The app automatically reloads your last active conversation when reopened.
+
+UI Enhancements:
+
+Custom styled chat bubbles for user vs. bot.
+
+Sidebar selector to switch between multiple saved chats.
 
 ---
 
