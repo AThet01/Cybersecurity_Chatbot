@@ -47,7 +47,12 @@ cd cybersecurity-chatbot
 ```bash
 pip install -r requirements.txt
 ```
+### To run the updated code (mainCsecChatbot.py)
+```bash
+$env:GEMINI_API_KEY="your_api_key_here"
+streamlit run mainCsecChatbot.py
 
+```
 
 
 
